@@ -1,0 +1,28 @@
+.App {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 5% 1fr 5%;
+  grid-gap: 50px;
+  grid-template-areas:
+    ". . ."
+    ". content ."
+    ". . .";
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 2%;
+  grid-area: content;
+  padding: 0;
+  overflow-y: auto;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.create-new-estimate-btn {
+  margin-bottom: 20px;
+}
